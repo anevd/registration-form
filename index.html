@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pinterest</title>
+		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<link rel="stylesheet" href="./assets/css/fonts.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<div class="background">
+			<div class="container">
+				<div class="registration">
+					<img src="./assets/icons/pinterest.svg" alt="pinterest logo" class="registration__logo" />
+					<h1 class="registration__title">Добро пожаловать в Pinterest</h1>
+					<h2 class="registration__subtitle">Находите новые идеи для вдохновения</h2>
+					<form class="form">
+						<label for="email" class="form__label">Адрес электронной почты</label>
+						<input type="text" id="email" placeholder="Введите адрес эл. почты" class="form__input" />
+						<label for="email" class="form__label-error" id="emailError">Это не похоже на адрес электронной почты</label>
+						<label for="email" class="form__label-empty" id="emailEmpty">Укажите адрес электронной почты</label>
+						<label for="password" class="form__label">Пароль</label>
+						<input type="password" id="password" placeholder="Пароль" class="form__input" />
+						<label for="password" class="form__label-empty" id="passwordEmpty">Укажите пароль</label>
+						<label for="first-name" class="form__label">Имя</label>
+						<input type="text" id="first-name" placeholder="Имя" class="form__input" />
+						<label for="first-name" class="form__label-empty" id="firstNameEmpty">Укажите свое имя</label>
+						<label for="last-name" class="form__label">Фамилия</label>
+						<input type="text" id="last-name" placeholder="Фамилия" class="form__input" />
+						<label for="last-name" class="form__label-empty" id="lastNameEmpty">Укажите свою фамилию</label>
+						<label for="age" class="form__label">Возраст</label>
+						<input type="text" id="age" placeholder="Возраст" class="form__input" />
+						<label for="age" class="form__label-error" id="ageError">Это не похоже на возраст</label>
+						<label for="age" class="form__label-empty" id="ageEmpty">Укажите свой возраст</label>
+					</form>
+					<button type="submit" class="button">Продолжить</button>
+					<div class="welcome-input"></div>
+				</div>
+			</div>
+		</div>
+		<script src="./assets/js/index.js"></script>
+	</body>
+</html>
