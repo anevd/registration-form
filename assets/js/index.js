@@ -8,9 +8,10 @@ let pattern = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[
 let valid = pattern.test(email.value);
 let clearMessageEmpty = document.querySelectorAll(".form__label-empty");
 let clearMessageError = document.querySelectorAll(".form__label-error");
-let correctInput = 0;
 
 button.addEventListener("click", function checkAccess() {
+	let correctInput = 0;
+	document.querySelector(".welcome-input").innerHTML = "";
 	for (let i = 0; i <= clearMessageEmpty.length - 1; i++) {
 		clearMessageEmpty[i].classList.remove("active");
 	}
@@ -51,6 +52,6 @@ button.addEventListener("click", function checkAccess() {
 	} else correctInput++;
 
 	if (correctInput == document.querySelectorAll(".form__label").length) {
-		document.querySelector(".welcome-input").innerText = `Добро пожаловать, ${firstName.value}!`;
+		document.querySelector(".welcome-input").innerHTML = `Добро пожаловать, ${firstName.value}!`;
 	}
 });
