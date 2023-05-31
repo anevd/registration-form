@@ -76,7 +76,8 @@ h2 {
 
 .form__label,
 .form__label-error,
-.form__label-empty {
+.form__label-empty,
+.form__label-checkbox {
 	font-size: 14px;
 	margin-left: 8px;
 	font-weight: 300;
@@ -125,4 +126,18 @@ h2 {
 .welcome-input {
 	margin-top: 10px;
 	color: seagreen;
+}
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.user-info_element {
+	margin-top: 5px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #111111;
+	letter-spacing: 0.03em;
 }
